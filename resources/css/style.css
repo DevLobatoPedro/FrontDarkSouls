@@ -25,7 +25,7 @@ header{
 }
 #mobile-icon{
  font-size: 32px;
-display: none;
+ display: none;
 }
 
 header .navigation{
@@ -68,20 +68,20 @@ header .navigation{
 }
 
 .navigation button:hover{
-background-color: wheat;
-width: 80px;
-height: 30px;
+  background-color: wheat;
+  width: 80px;
+  height: 30px;
 }
 
 header .header-text-box{
-        position: absolute;
-        top: 40%;
-        left: 2%;
+  position: absolute;
+  top: 40%;
+  left: 2%;
 }
 
 header .header-text-box h1{
-    margin: 0;
-    color: white;
+  margin: 0;
+  color: white;
 }
 
 header .header-text-box button{
@@ -209,8 +209,8 @@ header .navigation li a{
     }
 
     header .header-text-box button p{
-      margin-top: 15px;
-      
+      margin-top: 20px;
+      font-size: 30px;
     }
 
 
@@ -244,10 +244,15 @@ header .navigation li a{
   }
  
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     /* Define a largura para 100% em telas menores ou iguais a 480px */
     .images li {
       width: 100%;
+    }
+    header .header-text-box{
+      position: absolute;
+      top: 20%;
+      left: 2%;
     }
   }
   
