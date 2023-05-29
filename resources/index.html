@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0aef580cf3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="js/script.js" defer ></script>
+    <title>Dark Souls Wiki</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navigation"> 
+          <div><i class="bi bi-list"></i> </div> 
+          <i id="icon" onclick="refreshPage()"><img src="img/icon.gif" width="70px"></i>      
+            <a href="#" id="btnDs1"><i class="fa-solid fa-shield-halved"></i>Dark Souls <i class="fa-solid fa-chevron-down"></i></a>
+            <div id="menuDiv1" style="display: none;position: absolute;top: 68%;left: 12.5%;background-color: #f1f1f1;padding: 10px;">
+              <ul>
+                <li>
+                  <a>builds</a>
+                </li>
+                <li>
+                  <a>dicas</a>
+                </li>
+                <li>
+                  <a>modo facil</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" id="btnDs2"><i class="fa-solid fa-khanda"></i>Dark Souls 2 <i class="fa-solid fa-chevron-down"></i></a>
+              <div id="menuDiv2" style="display: none;position: absolute;top: 68%;left: 26.5%;background-color: #f1f1f1;padding: 10px;">
+                <ul>
+                  <li>
+                    <a>builds</a>
+                  </li>
+                  <li>
+                    <a>dicas</a>
+                  </li>
+                  <li>
+                    <a>modo facil</a>
+                  </li>
+                </ul>
+              </div>
+            <a href="#" id="btnDs3"><i class="fa-solid fa-wand-magic-sparkles"></i>Dark Souls 3 <i class="fa-solid fa-chevron-down"></i></a>
+            <div id="menuDiv3" style="display: none;position: absolute;top: 68%;left: 41.5%;background-color: #f1f1f1;padding: 10px;">
+              <ul>
+                <li>
+                  <a>builds</a>
+                </li>
+                <li>
+                  <a>dicas</a>
+                </li>
+                <li>
+                  <a>modo facil</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" id="btnBloodborne"><i class="fa-brands fa-playstation"></i>Bloodborn <i class="fa-solid fa-chevron-down"></i></a>
+            <div id="menuDiv4" style="display:none;position: absolute;top: 68%;left: 56.5%;background-color: #f1f1f1;padding: 10px;">
+              <ul>
+                <li>
+                  <a>builds</a>
+                </li>
+                <li>
+                  <a>dicas</a>
+                </li>
+                <li>
+                  <a>modo facil</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" id="btnElden"><i class="fa-solid fa-bolt-lightning"></i>Elden Ring <i class="fa-solid fa-chevron-down"></i></a> 
+            <div id="menuDiv5" style="display:none;position: absolute;top: 68%;left: 70.3%;background-color: #f1f1f1;padding: 10px;">
+              <ul>
+                <li>
+                  <a>builds</a>
+                </li>
+                <li>
+                  <a>dicas</a>
+                </li>
+                <li>
+                  <a>modo facil</a>
+                </li>
+              </ul>
+            </div>
+            <button class="btnLogin">Login</button>
+            <button class="btnSing">Sign up</button>
+            
+        </nav>
+
+        <div class ="header-text-box">
+            <h1>
+            Dark Souls é um jogo muito dificil pra voce ??? <br>
+            Tem duvida de que build fazer ???
+            </h1>
+            <button id="mp4">Videos Explicativos</button>
+        </div>
+    </header>
+  <section class="middle">
+    <div class="middle-text">
+        <h1>
+            Tudo sobre as maiores curiosidades e
+            dicas do mundo SoulsLike
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-5">
+          <div class="card" onclick="openTab('//darksouls.wiki.fextralife.com/Dark+Souls+Wiki')"><a><img src="img/Ds1.jpg" width="200px" height="300px"><h3>Dark souls 1</h3></a></div>
+        </div>
+        <div class="col span-1-of-5">
+            <div class="card" onclick="openTab('//darksouls2.wiki.fextralife.com/Dark+Souls+2+Wiki')"><a ><img src="img/Ds2.jpg" width="200px" height="300px"><h3>Dark souls 2</h3></a></div>
+          </div>
+          <div class="col span-1-of-5">
+            <div class="card" onclick="openTab('//darksouls3.wiki.fextralife.com/Dark+Souls+3+Wiki')"><a><img src="img/Ds3.jpg" width="200px" height="300px"><h3>Dark souls 3</h3></a></div>
+          </div>
+          <div class="col span-1-of-5">
+            <div class="card" onclick="openTab('//bloodborne.wiki.fextralife.com/Bloodborne+Wiki')"><a ><img src="img/Bloodborne.jpg" width="200px" height="300px"><h3>Bloodbone</h3></a></div>
+          </div>
+          <div class="col span-1-of-5">
+            <div class="card" onclick="openTab('//eldenring.wiki.fextralife.com/Elden+Ring+Wiki')"><a ><img src="img/Elden.png" width="200px" height="300px"><h3>Bloodbone</h3></a></div>
+          </div>
+        
+      </div>
+  </section>
+
+  <section class="images">
+    <ul>
+      <li>
+          <figure class="individual-image" onclick="openTab('img/img1.jpg')" >
+            <img src="img/img1.jpg" alt="">
+          </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>  
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class="individual-image">
+          <img src="img/img1.jpg" alt="">
+        </figure>
+      </li>
+    </ul>
+  </section>
+    
+</body>
+</html>
