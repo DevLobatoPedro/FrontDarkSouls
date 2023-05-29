@@ -89,14 +89,19 @@ header .header-text-box button{
     display: flex;
     margin-top: 2vh;
     margin-left: 10vh;
-    width: 130px;
-    height: 50px;
+    width: 200px;
+    height: 130px;
     background: transparent;
     border: 2px solid blue;
     cursor: pointer;
     border-radius: 10px;
     font-size: 20px;
     transition: 1s;
+}
+
+header .header-text-box button p{
+ font-size: 35px;
+ margin-top:20px ;
 }
 
 header .header-text-box button:hover{
@@ -188,13 +193,26 @@ header .navigation li a{
     opacity: 1; /* Aumenta a opacidade para exibir o texto */
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 860px) {
     
     header{
       height: 75vh;
       background-position: left;
       
     }
+
+    header .header-text-box button{
+      width: 175px;
+      height: 120px;
+      font-size: 32px;
+      
+    }
+
+    header .header-text-box button p{
+      margin-top: 15px;
+      
+    }
+
 
     .navigation button{
       width:80px;
@@ -209,6 +227,7 @@ header .navigation li a{
     }
     #mobile-icon{
      display: flex;
+     font-size: 45px;
      }
      #ulBurg{
       display: none;
@@ -216,6 +235,11 @@ header .navigation li a{
       background-color: white;
       color: white;
       border-radius: 12%;
+      font-size: 20px;
+     }
+     #ulBurg li{
+      margin-top: 8px;
+      margin-bottom: 2px;
      }
   }
  
