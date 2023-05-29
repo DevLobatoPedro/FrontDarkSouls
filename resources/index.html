@@ -14,10 +14,22 @@
     
     <header>
         <nav class="navigation"> 
-          <div><i class="bi bi-list"></i> </div> 
+          <div id="burg">
+            
+            <a class="bi bi-list" id="mobile-icon" onclick="showMenu('ulBurg')"></a> 
+            <ul id="ulBurg">
+              <li><a href="">Dark Souls</a> </li>
+              <li><a href="">Dark Souls 2</a></li>
+              <li><a href="">Dark Souls 3</a></li>
+              <li><a href="">Blood</a></li>
+              <li><a href="">Elden Ring</a></li> 
+            </ul>
+          
+          </div> 
           <i id="icon" onclick="refreshPage()"><img src="img/icon.gif" width="70px"></i>      
-            <a href="#" id="btnDs1"><i class="fa-solid fa-shield-halved"></i>Dark Souls <i class="fa-solid fa-chevron-down"></i></a>
-            <div id="menuDiv1" style="display: none;position: absolute;top: 68%;left: 12.5%;background-color: #f1f1f1;padding: 10px;">
+         
+          <a href="#" id="btnDs1"><i class="fa-solid fa-shield-halved"></i>Dark Souls <i class="fa-solid fa-chevron-down"></i></a>
+            <div id="menuDiv1" style="display: none;position: absolute;top: 68%;left: 19.5%;background-color: #f1f1f1;padding: 10px;">
               <ul>
                 <li>
                   <a>builds</a>
@@ -31,7 +43,7 @@
               </ul>
             </div>
             <a href="#" id="btnDs2"><i class="fa-solid fa-khanda"></i>Dark Souls 2 <i class="fa-solid fa-chevron-down"></i></a>
-              <div id="menuDiv2" style="display: none;position: absolute;top: 68%;left: 26.5%;background-color: #f1f1f1;padding: 10px;">
+              <div id="menuDiv2" style="display: none;position: absolute;top: 68%;left: 32.5%;background-color: #f1f1f1;padding: 10px;">
                 <ul>
                   <li>
                     <a>builds</a>
@@ -45,7 +57,7 @@
                 </ul>
               </div>
             <a href="#" id="btnDs3"><i class="fa-solid fa-wand-magic-sparkles"></i>Dark Souls 3 <i class="fa-solid fa-chevron-down"></i></a>
-            <div id="menuDiv3" style="display: none;position: absolute;top: 68%;left: 41.5%;background-color: #f1f1f1;padding: 10px;">
+            <div id="menuDiv3" style="display: none;position: absolute;top: 68%;left: 46.5%;background-color: #f1f1f1;padding: 10px;">
               <ul>
                 <li>
                   <a>builds</a>
@@ -59,7 +71,7 @@
               </ul>
             </div>
             <a href="#" id="btnBloodborne"><i class="fa-brands fa-playstation"></i>Bloodborn <i class="fa-solid fa-chevron-down"></i></a>
-            <div id="menuDiv4" style="display:none;position: absolute;top: 68%;left: 56.5%;background-color: #f1f1f1;padding: 10px;">
+            <div id="menuDiv4" style="display:none;position: absolute;top: 68%;left: 59.5%;background-color: #f1f1f1;padding: 10px;">
               <ul>
                 <li>
                   <a>builds</a>
@@ -73,7 +85,7 @@
               </ul>
             </div>
             <a href="#" id="btnElden"><i class="fa-solid fa-bolt-lightning"></i>Elden Ring <i class="fa-solid fa-chevron-down"></i></a> 
-            <div id="menuDiv5" style="display:none;position: absolute;top: 68%;left: 70.3%;background-color: #f1f1f1;padding: 10px;">
+            <div id="menuDiv5" style="display:none;position: absolute;top: 68%;left: 72.3%;background-color: #f1f1f1;padding: 10px;">
               <ul>
                 <li>
                   <a>builds</a>
@@ -86,6 +98,7 @@
                 </li>
               </ul>
             </div>
+       
             <button class="btnLogin">Login</button>
             <button class="btnSing">Sign up</button>
             
@@ -98,6 +111,7 @@
             </h1>
             <button id="mp4">Videos Explicativos</button>
         </div>
+
     </header>
   <section class="middle">
     <div class="middle-text">

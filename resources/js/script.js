@@ -8,6 +8,8 @@ const btnDs2 = document.getElementById("btnDs2");
 const btnDs3 = document.getElementById("btnDs3");
 const btnBloodborne = document.getElementById("btnBloodborne");
 const btnElden = document.getElementById("btnElden");
+const burger = document.getElementById("mobile-icon")
+const burgerList = document.getElementById("ulBurg")
 
 const menuDiv1 = document.getElementById("menuDiv1");
 const menuDiv2 = document.getElementById("menuDiv2");
@@ -29,6 +31,12 @@ btn.addEventListener('click', () => {
     openTab(url)
 })
 
+burger.addEventListener('click', () => {
+  showMenus(burgerList)
+})
+
+
+
 function hideMenus() {
     menuDiv1.style.display = "none";
     menuDiv2.style.display = "none";
@@ -37,18 +45,15 @@ function hideMenus() {
     menuDiv5.style.display = "none";
   }
 
-/*function showMenu(menu) {
-    hideMenus()
+function showMenus(menu) {
     if (menu.style.display === "none") {
       menu.style.display = "block";
-      console.log('bloco');
-    } else if(menu.style.display === "block" && event.target !== menu) {
+    } else if(menu.style.display === "block") {
       menu.style.display = "none";
-      console.log('desbloco');
     } else{
         menu.style.display = "none";
     }
-  }*/
+  }
 
   function showMenu(menu) {
     hideMenus();
@@ -64,7 +69,7 @@ function hideMenus() {
   }
 
 btnDs1.addEventListener("click", function() {
-    showMenu(menuDiv1, event);
+    showMenu(menuDiv1);
   });
   
 btnDs2.addEventListener("click", function() {
